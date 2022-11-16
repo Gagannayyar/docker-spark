@@ -1,0 +1,4 @@
+1. Create Data Feed 
+2. Push Data to PostgresSQL
+3. Read the Data Using Spark
+4. Push the Data Using Spark To MySQL
