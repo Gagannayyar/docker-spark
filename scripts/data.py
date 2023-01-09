@@ -51,7 +51,7 @@ class CreateData:
         df = pd.DataFrame(data=dicti)
         return df
     
-    def df_pertime(self,number_of_df,num,sleep_time=10):
+    def df_pertime(self,num):
         """
         Keep create a batch of dataframe with specific number of rows
         args:
@@ -60,9 +60,13 @@ class CreateData:
             sleep_time: The time between consective dataframes in seconds 
             (default is 10 seconds)
         """
-        n = 1
-        while n <= number_of_df  :
-            df = self.create_dataframe(num)
-            n += 1
-            time.sleep(sleep_time)
-            return df
+    
+        df = self.create_dataframe(num)    
+        return df
+
+
+cdata = CreateData()
+
+for i in range(10):
+    print(cdata.create_dataframe(10))
+    time.sleep(10)
