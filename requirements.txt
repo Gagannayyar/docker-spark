@@ -6,3 +6,5 @@ psycopg2==2.9.5
 py4j==0.10.9.5
 pyspark==3.3.1
 pytz==2022.7
+confluent-kafka
+confluent-kafka configparser
